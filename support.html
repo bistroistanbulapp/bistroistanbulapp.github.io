@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destek / Support</title>
+<meta name="description" content="Destek ve sıkça sorulan sorular — Support and FAQ">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1c1f23; --muted:#5b636b; --line:#e3e6ea;
+    --accent:#0b5fa5; --box:#f6f8fa; --boxline:#dde3e9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#15181c; --fg:#e8ebee; --muted:#a3acb5; --line:#2c3138;
+      --accent:#6ab5f5; --box:#1d2126; --boxline:#2c3138;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:17px; line-height:1.65;
+  }
+  .wrap{max-width:44rem; margin:0 auto; padding:2rem 1.25rem 5rem}
+  header{border-bottom:1px solid var(--line); padding-bottom:1.25rem; margin-bottom:2rem}
+  h1{font-size:1.6rem; line-height:1.3; margin:0 0 .4rem}
+  h2{font-size:1.15rem; margin:2.25rem 0 .6rem}
+  p,li{margin:.6rem 0}
+  ul{padding-left:1.3rem}
+  a{color:var(--accent)}
+  .meta{color:var(--muted); font-size:.9rem; margin:0}
+  .langbar{display:flex; gap:.5rem; margin-bottom:1.5rem}
+  .langbar button{
+    font:inherit; font-size:.9rem; padding:.4rem .9rem; cursor:pointer;
+    background:var(--box); color:var(--fg);
+    border:1px solid var(--boxline); border-radius:.4rem;
+  }
+  .langbar button[aria-pressed="true"]{
+    background:var(--accent); color:#fff; border-color:var(--accent);
+  }
+  .langbar button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  .box{
+    background:var(--box); border:1px solid var(--boxline);
+    border-radius:.5rem; padding:.9rem 1.1rem; margin:1.2rem 0;
+  }
+  .box p:first-child{margin-top:0}
+  .box p:last-child{margin-bottom:0}
+  details{
+    border-bottom:1px solid var(--line); padding:.85rem 0;
+  }
+  details summary{
+    cursor:pointer; font-weight:600; list-style:none;
+    display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+"; color:var(--muted); font-weight:400; font-size:1.3rem; line-height:1}
+  details[open] summary::after{content:"−"}
+  details summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:.2rem}
+  details .ans{padding-top:.2rem}
+  details .ans p:first-child{margin-top:.4rem}
+  footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ============================================================
+     BURAYI DEĞİŞTİR — sadece bu satırlar.
+     privacy.html ile aynı değerleri kullan.
+     ============================================================ -->
+<script>
+  var APP_NAME = "Bistro İstanbul Tycoon";
+  var CONTACT_EMAIL = "info@bistroistanbulapp.com";
+  var DEVELOPER = "Hayri Anıl Çağlayan";
+  var PRIVACY_URL = "https://bistroistanbulapp.github.io/privacy.html";
+</script>
+
+<div class="langbar" role="group" aria-label="Dil / Language">
+  <button type="button" id="btnTr" aria-pressed="true">Türkçe</button>
+  <button type="button" id="btnEn" aria-pressed="false">English</button>
+</div>
+
+<!-- ==================== TÜRKÇE ==================== -->
+<section id="tr" lang="tr">
+  <header>
+    <h1><span data-app>Uygulama</span> — Destek</h1>
+    <p class="meta">Soru, hata bildirimi ve öneriler için</p>
+  </header>
+
+  <p><span data-app>Uygulama</span>, bağımsız bir geliştirici tarafından tek başına yapılan bir restoran yönetim oyunudur. Yaşadığınız her sorun ve gönderdiğiniz her öneri doğrudan bana ulaşır ve oyunun gelişmesine katkı sağlar.</p>
+
+  <div class="box">
+    <p><strong>İletişim:</strong> <a data-mail href="#">—</a></p>
+    <p>E-postalar genellikle <strong>1-3 iş günü</strong> içinde yanıtlanır.</p>
+  </div>
+
+  <h2>Hata bildirirken</h2>
+  <p>Sorunu daha hızlı çözebilmem için e-postanıza şunları eklerseniz çok yardımcı olur:</p>
+  <ul>
+    <li>Cihaz modeliniz (örn. iPhone 12 Pro)</li>
+    <li>iOS sürümünüz (Ayarlar → Genel → Hakkında)</li>
+    <li>Oyun sürümü (oyun içi arayüzde logonun yanında yazar)</li>
+    <li>Sorunun ne zaman ve nasıl ortaya çıktığı — mümkünse ekran görüntüsü</li>
+  </ul>
+
+  <h2>Sıkça Sorulan Sorular</h2>
+
+  <details>
+    <summary>Oyun kaydım kayboldu, geri getirebilir miyim?</summary>
+    <div class="ans">
+      <p>Oyun kaydı yalnızca cihazınızda saklanır ve bulut yedeklemesi bulunmamaktadır. Uygulamayı sildiğinizde kayıt da silinir ve geri getirilemez.</p>
+      <p>Uygulamayı silmediğiniz hâlde kaydınız sıfırlandıysa bu bir hatadır — lütfen cihaz ve sürüm bilgisiyle birlikte bana yazın.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Oyunda ses gelmiyor</summary>
+    <div class="ans">
+      <p>Önce cihazınızın yan tarafındaki sessiz düğmesinin kapalı olmadığını kontrol edin. Ardından oyun içindeki <em>Ayarlar</em> menüsünden ses ve müzik kaydırıcılarına bakın.</p>
+      <p>Uygulamayı arka plana alıp geri döndüğünüzde ses kesiliyorsa, oyunu tamamen kapatıp yeniden açmayı deneyin.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Oyun takılıyor veya yavaş çalışıyor</summary>
+    <div class="ans">
+      <p>Salon büyüdükçe ekrandaki nesne sayısı artar. Oyun içindeki <em>Ayarlar</em> menüsünden görsel kalite seçeneklerini düşürebilir, dışarıdaki binaları, araçları ve yayaları kapatabilirsiniz — bu, özellikle eski cihazlarda belirgin fark yaratır.</p>
+      <p>Arka planda açık duran diğer uygulamaları kapatmak da yardımcı olur.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Oyunu sıfırdan başlatmak istiyorum</summary>
+    <div class="ans">
+      <p>Oyun içindeki <em>Ayarlar</em> menüsünde <strong>"Kaydı sil / yeni oyun"</strong> seçeneği bulunur. Güvenlik için iki kez onay ister. Bu işlem geri alınamaz.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Oyunun dilini nasıl değiştiririm?</summary>
+    <div class="ans">
+      <p><em>Ayarlar</em> menüsünden Türkçe ve İngilizce arasında geçiş yapabilirsiniz. Dil değiştirildiğinde oyun kendini yeniler; kaydınız korunur.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Oyun internet bağlantısı gerektiriyor mu?</summary>
+    <div class="ans">
+      <p>Hayır. Oyun tamamen çevrimdışı çalışır, hiçbir sunucuya bağlanmaz ve veri göndermez.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Verilerim toplanıyor mu?</summary>
+    <div class="ans">
+      <p>Hayır. Oyun hiçbir kişisel veri toplamaz. Ayrıntılar için <a data-privacy href="#">gizlilik politikasına</a> bakabilirsiniz.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Öneri veya yeni özellik isteğim var</summary>
+    <div class="ans">
+      <p>Memnuniyetle beklerim. Oyun sürekli geliştirilmekte olduğu için gelen öneriler doğrudan yol haritasını etkiliyor. Fikrinizi yukarıdaki e-posta adresine yazmanız yeterli.</p>
+    </div>
+  </details>
+
+  <footer>
+    <p><a data-privacy href="#">Gizlilik Politikası</a></p>
+    <p>© <span data-year>2026</span> <span data-dev>Geliştirici</span>. Tüm hakları saklıdır.</p>
+  </footer>
+</section>
+
+<!-- ==================== ENGLISH ==================== -->
+<section id="en" lang="en" hidden>
+  <header>
+    <h1><span data-app>App</span> — Support</h1>
+    <p class="meta">For questions, bug reports and suggestions</p>
+  </header>
+
+  <p><span data-app>App</span> is a restaurant management game built single-handedly by an independent developer. Every issue you report and every suggestion you send reaches me directly and helps shape the game.</p>
+
+  <div class="box">
+    <p><strong>Contact:</strong> <a data-mail href="#">—</a></p>
+    <p>Emails are usually answered within <strong>1-3 business days</strong>.</p>
+  </div>
+
+  <h2>Reporting a bug</h2>
+  <p>Including the following in your email helps me resolve the issue much faster:</p>
+  <ul>
+    <li>Your device model (e.g. iPhone 12 Pro)</li>
+    <li>Your iOS version (Settings → General → About)</li>
+    <li>The game version (shown next to the logo in the in-game interface)</li>
+    <li>When and how the problem occurred — a screenshot if possible</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>I lost my save file — can it be recovered?</summary>
+    <div class="ans">
+      <p>Save data is stored only on your device and there is no cloud backup. Deleting the app also deletes your save, and it cannot be recovered.</p>
+      <p>If your save reset without you deleting the app, that is a bug — please write to me with your device and version details.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>There is no sound in the game</summary>
+    <div class="ans">
+      <p>First check that the silent switch on the side of your device is not enabled. Then check the sound and music sliders in the in-game <em>Settings</em> menu.</p>
+      <p>If audio cuts out after returning from the background, try closing and reopening the game completely.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>The game stutters or runs slowly</summary>
+    <div class="ans">
+      <p>As your dining room grows, the number of objects on screen increases. In the in-game <em>Settings</em> menu you can lower the visual quality options and turn off the buildings, cars and pedestrians outside — this makes a noticeable difference, particularly on older devices.</p>
+      <p>Closing other apps running in the background also helps.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>I want to start over from scratch</summary>
+    <div class="ans">
+      <p>The in-game <em>Settings</em> menu contains a <strong>"Delete save / new game"</strong> option. It asks for confirmation twice as a safeguard. This action cannot be undone.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I change the game's language?</summary>
+    <div class="ans">
+      <p>You can switch between Turkish and English from the <em>Settings</em> menu. The game reloads when the language changes; your save is preserved.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Does the game require an internet connection?</summary>
+    <div class="ans">
+      <p>No. The game runs entirely offline, connects to no servers, and sends no data.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Is my data being collected?</summary>
+    <div class="ans">
+      <p>No. The game collects no personal data. See the <a data-privacy href="#">privacy policy</a> for details.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>I have a suggestion or feature request</summary>
+    <div class="ans">
+      <p>I'd love to hear it. The game is under continuous development, so incoming suggestions directly influence the roadmap. Just send your idea to the email address above.</p>
+    </div>
+  </details>
+
+  <footer>
+    <p><a data-privacy href="#">Privacy Policy</a></p>
+    <p>© <span data-year>2026</span> <span data-dev>Developer</span>. All rights reserved.</p>
+  </footer>
+</section>
+
+</div>
+
+<script>
+(function(){
+  function fill(sel, val){
+    document.querySelectorAll(sel).forEach(function(el){ el.textContent = val; });
+  }
+  fill("[data-app]", APP_NAME);
+  fill("[data-dev]", DEVELOPER);
+  fill("[data-year]", String(new Date().getFullYear()));
+  document.querySelectorAll("[data-mail]").forEach(function(a){
+    a.textContent = CONTACT_EMAIL;
+    a.href = "mailto:" + CONTACT_EMAIL;
+  });
+  document.querySelectorAll("[data-privacy]").forEach(function(a){
+    a.href = PRIVACY_URL;
+  });
+  document.title = APP_NAME + " — Destek / Support";
+
+  var tr = document.getElementById("tr"),
+      en = document.getElementById("en"),
+      btnTr = document.getElementById("btnTr"),
+      btnEn = document.getElementById("btnEn");
+
+  function setLang(lang){
+    var isEn = (lang === "en");
+    en.hidden = !isEn;
+    tr.hidden = isEn;
+    btnEn.setAttribute("aria-pressed", String(isEn));
+    btnTr.setAttribute("aria-pressed", String(!isEn));
+    document.documentElement.lang = isEn ? "en" : "tr";
+    if (location.hash !== "#" + lang) history.replaceState(null, "", "#" + lang);
+  }
+
+  btnTr.addEventListener("click", function(){ setLang("tr"); });
+  btnEn.addEventListener("click", function(){ setLang("en"); });
+
+  var initial = (location.hash === "#en") ? "en"
+              : (location.hash === "#tr") ? "tr"
+              : ((navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+  setLang(initial);
+})();
+</script>
+</body>
+</html>
