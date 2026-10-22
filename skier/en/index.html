@@ -25,73 +25,115 @@
 <body>
 
 <h1>Skier — Privacy Policy</h1>
-<p class="alt">Last updated: 6 October 2026</p>
+<p class="alt">Last updated: 22 October 2026</p>
 <p class="dil"><a href="../">Türkçe</a></p>
 
 <div class="kutu">
-  <strong>In short:</strong> Skier collects no data and sends no data.
-  The game has no internet connection. You are never asked to create an account.
-  It contains no ads, no analytics and no third-party tracking.
+  <strong>In short:</strong> You never create an account in Skier, and we never ask for your email,
+  phone number, real name or location. For leaderboards and cloud saves the game connects to Unity's
+  game servers (Unity Gaming Services) with a random player ID, the player name you choose, your game
+  progress and your scores. There are no ads, no analytics and no tracking. You can delete your
+  account from inside the game at any time.
 </div>
 
 <h2>1. Data collected</h2>
-<p>None. The app never asks for your name, email address, phone number, date of birth or any
-other identifying information. It does not access your location, contacts, photos, microphone,
-camera, health data or calendars, and never requests these permissions.</p>
-<p>The mountain, slopes and lifts in the game are drawn from map data shipped inside the app;
-your location is never used. No identifier, including the advertising identifier (IDFA), is read
-or created.</p>
-
-<h2>2. Stored on your device</h2>
-<p>So that you don't lose your progress, some information is stored only on your phone, in the
-app's own documents folder. It never leaves your device and is never sent to us or anyone else:</p>
+<p>When you open the game, Unity creates a random <strong>player ID</strong> for you (a "guest"
+account); you are not asked for any information. The following is stored on the server with this ID:</p>
 <ul>
-  <li>Game progress: Snow Coins, level, equipment, unlocked slopes, best scores and stars</li>
-  <li>Settings: sound, camera, riding style, look options</li>
-  <li>Performance log: frame rate and the phone's thermal state (to make the game run smoother; stays on the phone)</li>
-  <li>Your own notes: note flags you place in fly mode and an in-game screenshot of that moment (stays on the phone)</li>
+  <li><strong>Player name:</strong> the name shown on leaderboards. If you don't choose one, you get a
+      name like <code>Kayakçı1234</code>. Inappropriate names are blocked.</li>
+  <li><strong>Cloud copy of your game progress:</strong> level, experience points, Snowcoin, unlocked
+      runs, run statistics (best score, stars, time), owned and equipped items, learned tricks, the app
+      version and date you first played, and the time of the last save.</li>
+  <li><strong>Scores:</strong> your best score or time on each run, together with your level, app
+      version and equipment power. They are visible to other players on the weekly and all-time
+      leaderboards.</li>
+  <li><strong>Game Center ID</strong> (only if Game Center is on on your iPhone): the player ID Apple
+      issues for this game, used to link your progress to your Game Center account and bring it back
+      when you change phones. Your Game Center nickname is only offered to you as a name suggestion;
+      it is not put on the leaderboard unless you choose it.</li>
+  <li><strong>Game Center friends list</strong> (only if you allow it; your iPhone asks separately):
+      to show your friends' scores on the "Friends" tab of the leaderboard screen, your friends' Game
+      Center player IDs are sent to the server. They are not stored; they are only used at that moment
+      to look up the scores.</li>
+  <li><strong>Technical data:</strong> to run the service and prevent abuse, Unity's servers may process
+      technical data such as your IP address and device / operating system type while you are connected.</li>
+</ul>
+<p><strong>Not collected:</strong> email, phone number, real name, date of birth, location, contacts,
+photos, microphone, camera, advertising identifier (IDFA). The game never asks for these permissions.
+The mountain and runs are drawn from bundled map data; your location is not used.</p>
+
+<h2>2. How the data is used</h2>
+<p>This data is used only to make the game work: leaderboards, backing up your progress in the cloud
+and restoring it when you change phones, and checking scores against cheating. We do
+<strong>not</strong> use it for advertising, profiling, selling, or matching with other apps. We do not
+track you across apps and websites.</p>
+
+<h2>3. What stays on your device</h2>
+<p>The following is stored only on your phone and never sent anywhere:</p>
+<ul>
+  <li>Settings: sound, language, steering sensitivity, camera, display options</li>
+  <li>Scores waiting to be sent (while offline) and the game's own temporary files</li>
+  <li>Performance log: frame rate and the phone's thermal state (on the phone only)</li>
+  <li>Your own notes: note flags you place in flight mode and their screenshots (on the phone only)</li>
 </ul>
 
-<h2>3. Deleting your data</h2>
-<p>Deleting the app deletes all of the above. As there are no records on any server, there is
-nothing for you to ask us to delete — we hold no data about you.</p>
+<h2>4. Deleting your data</h2>
+<p>In the game, go to <strong>Settings › Account › Delete my account</strong> to delete your account at any
+time (you are asked to confirm twice; an internet connection is needed). This deletes your player account
+at Unity, your cloud save and the scores linked to your account, and resets the progress on your phone.
+Deletion on the server may take a few days to complete. Deleting the app alone does not delete the data
+on the server. If you cannot open the game, write to the address below with your player ID (shown in
+Settings › Account) and we will delete it for you.</p>
 
-<h2>4. Internet connection</h2>
-<p>The app never connects to any server. All game content (mountain and terrain data, graphics,
-text) ships inside the app; sounds are generated on the device in real time. The game works fully
-in airplane mode.</p>
+<h2>5. Internet connection</h2>
+<p>The game is fully playable offline. When online, it connects to Unity's servers at launch, at the end of
+a run and when the game goes to the background: sign-in, cloud save, sending scores and reading
+leaderboards. While offline, scores wait on the phone and are sent once you are connected.</p>
 
-<h2>5. Third parties</h2>
-<p>No ad network, analytics service, crash reporting tool, social media plug-in or any tracking
-software (SDK) is used. The game is made with the Unity game engine; the engine runs on the device
-and none of Unity's data-sending services are used in this app.</p>
-<p>Because you get the app through the App Store or TestFlight, Apple's own privacy policy applies;
-Apple may collect download and crash statistics. Screenshots and comments you choose to send with
-TestFlight's "Send Beta Feedback" reach us through Apple. Details:
+<h2>6. Third parties</h2>
+<ul>
+  <li><strong>Unity Gaming Services</strong> (Unity Technologies): player sign-in (Authentication), cloud
+      save (Cloud Save), leaderboards (Leaderboards) and score checks (Cloud Code). The data is processed on
+      Unity's servers on our behalf; the servers may be outside your country.
+      Details: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity player privacy policy</a></li>
+  <li><strong>Apple Game Center:</strong> if you use it, sign-in is handled by Apple and Apple's privacy
+      policy applies.</li>
+</ul>
+<p>No ad networks, analytics services or tracking software are used.
+Because you get the app through the App Store or TestFlight, Apple's own privacy policy also applies;
+download and crash statistics may be collected by Apple. Screenshots and comments you choose to send with
+"send feedback" in TestFlight reach us through Apple. Details:
 <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>
 
-<h2>6. Children</h2>
-<p>The game is for players of all ages. Since no data is collected, no data about children is
-collected either. There are no in-app purchases, ads, chat or interaction with other users.</p>
+<h2>7. Children</h2>
+<p>The game is for players of all ages. No account is created, no contact details are requested, and there
+is no chat or messaging; other players only see your player name and score on the leaderboards.
+Inappropriate player names are filtered.</p>
 
-<h2>7. Purchases</h2>
-<p>There are no in-app purchases, subscriptions or payments of any kind.</p>
+<h2>8. Purchases</h2>
+<p>There are currently no real-money in-app purchases or subscriptions. If they are added, payment will go
+through Apple and this page will be updated.</p>
 
-<h2>8. Your rights</h2>
-<p>Regulations such as the GDPR and Turkey's KVKK give you the right to access, correct and request
-deletion of data processed about you. Skier processes no personal data, so in practice there is
-nothing for us to delete, transfer or correct.</p>
+<h2>9. Retention</h2>
+<p>Data on the server is kept as long as your account exists. Weekly leaderboards reset every Monday;
+previous weeks' results are archived at Unity and are deleted too when you delete your account.</p>
 
-<h2>9. Map data</h2>
-<p>Terrain: Copernicus EU-DEM (AWS Terrain Tiles). Slopes, lifts, buildings:
+<h2>10. Your rights</h2>
+<p>Under the GDPR and Turkish KVKK you have the right to access, correct, delete and port your data. You can
+change your player name and delete your account in Settings › Account; for any other request, write to the
+address below with your player ID.</p>
+
+<h2>11. Map data</h2>
+<p>Terrain: Copernicus EU-DEM (AWS Terrain Tiles). Runs, lifts, buildings:
 © OpenStreetMap contributors (ODbL). Forest cover: © ESA WorldCover 2021 (CC BY 4.0).
 This data contains no personal data.</p>
 
-<h2>10. Changes</h2>
-<p>If this policy changes, this page is updated and the date above is renewed. Any change that
-would require us to start collecting data will be stated clearly in the app update.</p>
+<h2>12. Changes</h2>
+<p>If this policy changes, this page is updated and the date above is renewed. If we start collecting a new
+type of data, the app update will say so clearly.</p>
 
-<h2>11. Contact</h2>
+<h2>13. Contact</h2>
 <p>For questions and requests:
 <a href="mailto:info@bistroistanbulapp.com">info@bistroistanbulapp.com</a></p>
 
