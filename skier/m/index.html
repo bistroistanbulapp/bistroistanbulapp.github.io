@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Skier — Meydan okuma</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+       padding: 2rem 1rem; background: #0B2158; color: #fff;
+       font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+.kart { width: 100%; max-width: 24rem; text-align: center; }
+.ust { font-size: .8rem; font-weight: 800; letter-spacing: .18em; color: #FFB061; margin: 0 0 .6rem; }
+h1 { font-size: 2.6rem; font-style: italic; font-weight: 900; margin: 0 0 .4rem; letter-spacing: .02em; }
+p { margin: 0 0 1.4rem; color: #C9D6F5; }
+.dugme { display: block; width: 100%; padding: 1rem; border-radius: 2rem; font-weight: 900; font-style: italic;
+         font-size: 1.15rem; letter-spacing: .06em; text-decoration: none; margin: 0 0 .9rem; }
+.ac { background: #FF6A10; color: #fff; box-shadow: 0 5px 0 #A51F0B; }
+.indir { background: rgba(255,255,255,.94); color: #1F3366; box-shadow: 0 4px 0 rgba(8,24,67,.45); }
+.not { font-size: .9rem; color: #AAC1F2; margin-top: .4rem; }
+.kod { font: 600 .85rem ui-monospace, Menlo, monospace; color: #7F95C8; margin-top: 1.6rem; }
+.dil { margin-top: 1.2rem; font-size: .9rem; }
+.dil a { color: #FFB061; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="kart">
+  <div class="ust" id="ust">SKIER · MEYDAN OKUMA</div>
+  <h1>SKIER</h1>
+  <div id="var">
+    <p id="metin">Bir arkadaşın seni yarışa çağırdı. Onun hayaletine karşı kay, koşusunu geç!</p>
+    <a class="dugme ac" id="ac" href="#">SKIER'DE AÇ</a>
+    <a class="dugme indir" id="indir" href="https://testflight.apple.com/join/S7xY8xFn">SKIER'İ İNDİR (TestFlight)</a>
+    <div class="not" id="not">Oyunu yeni kurduysan bu bağlantıya yeniden dokun.</div>
+    <div class="kod" id="kod"></div>
+  </div>
+  <div id="yok" hidden>
+    <p id="yokMetin">Bu bağlantı eksik ya da bozuk. Arkadaşından yeniden göndermesini iste.</p>
+    <a class="dugme indir" id="indir2" href="https://testflight.apple.com/join/S7xY8xFn">SKIER'İ İNDİR (TestFlight)</a>
+  </div>
+  <div class="dil"><a href="../">Gizlilik</a></div>
+</main>
+<script>
+(function () {
+  // Bağlantı: https://bistroistanbulapp.github.io/skier/m/#<kod> → uygulama: skier://m/<kod> (kod 8 harf, oyunun alfabesi)
+  var kod = (location.hash || "").replace(/^#/, "").trim().toUpperCase();
+  var gecerli = /^[A-HJ-NP-Z2-9]{8}$/.test(kod);
+  var en = !/^tr\b/i.test(navigator.language || "");
+  if (en) {
+    document.documentElement.lang = "en";
+    document.title = "Skier — Challenge";
+    document.getElementById("ust").textContent = "SKIER · CHALLENGE";
+    document.getElementById("metin").textContent = "A friend challenged you to a race. Ski against their ghost and beat their run!";
+    document.getElementById("ac").textContent = "OPEN IN SKIER";
+    document.getElementById("indir").textContent = "GET SKIER (TestFlight)";
+    document.getElementById("indir2").textContent = "GET SKIER (TestFlight)";
+    document.getElementById("not").textContent = "Just installed the game? Tap this link again.";
+    document.getElementById("yokMetin").textContent = "This link is incomplete or broken. Ask your friend to send it again.";
+    var d = document.querySelector(".dil a"); d.textContent = "Privacy"; d.href = "../en/";
+  }
+  if (!gecerli) {
+    document.getElementById("var").hidden = true;
+    document.getElementById("yok").hidden = false;
+    return;
+  }
+  document.getElementById("ac").href = "skier://m/" + kod;
+  document.getElementById("kod").textContent = kod;
+})();
+</script>
+</body>
+</html>
