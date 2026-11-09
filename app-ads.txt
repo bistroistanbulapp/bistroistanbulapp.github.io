@@ -1,0 +1,9 @@
+# app-ads.txt — bistroistanbulapp.github.io
+# UYARI: Bu alan adi BIRDEN COK uygulamanin "developer website"i
+# (My Bistro, Puke Zombie, Skier, Valet Parking, Beach Mulakat).
+# app-ads.txt alan adi basina TEK dosyadir. Yeni bir uygulama ya da yeni bir
+# AdMob/reklam hesabi eklenirse satir EKLENIR; asagidaki satir SILINMEZ,
+# UZERINE YAZILMAZ. Eksik satir o uygulamanin reklam gelirini dusurur.
+#
+# My Bistro: Restaurant Tycoon (com.anil.bistroistanbul) - AdMob
+google.com, pub-1191700399762335, DIRECT, f08c47fec0942fa0
