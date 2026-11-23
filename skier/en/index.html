@@ -25,7 +25,7 @@
 <body>
 
 <h1>Skier — Privacy Policy</h1>
-<p class="alt">Last updated: 23 November 2026</p>
+<p class="alt">Last updated: 24 November 2026</p>
 <p class="dil"><a href="../">Türkçe</a> · <a href="terms/">Terms of Use</a></p>
 
 <div class="kutu">
@@ -41,64 +41,83 @@
 account); you are not asked for any information. The following is stored on the server with this ID:</p>
 <ul>
   <li><strong>Player name:</strong> the name shown on leaderboards. If you don't choose one, you get a
-      name like <code>Kayakçı1234</code>. Inappropriate names are blocked.</li>
-  <li><strong>Cloud copy of your game progress:</strong> level, experience points, Snowcoin, unlocked
+      name like <code>Skier1234</code> (<code>Kayakçı1234</code> if the game is in Turkish). Inappropriate names are blocked.</li>
+  <li><strong>Cloud copy of your game progress:</strong> level, experience points, total score, Snowcoin, unlocked
       runs, run statistics (best score, stars, time), owned and equipped items, learned tricks, the app
       version and date you first played, and the time of the last save.</li>
   <li><strong>Scores:</strong> your best score or time on each run, together with your level, app
       version and equipment power. They are visible to other players on the weekly and all-time leaderboards.</li>
   <li><strong>Run recording (ghost):</strong> the movement recording of your record runs and duel runs (position and pose on the slope, the tricks you do). It is used to check that the score is genuine and it is <strong>shown to other players</strong>: in duels, in races picked from the leaderboard and in challenges it appears as a rival ghost, with your name and your outfit.</li>
-  <li><strong>Duels and challenges:</strong> your duel trophies, league and results; the challenges you send and receive (sender's player name, run, score, the chosen preset sentence, result) and the Snowcoins your ghost has won. When you challenge a friend, your name, the run and your score are written to their in-game challenge list. If you create a challenge code, anyone who enters it in the game sees your name, the run and your score and can race your ghost; the code is valid for 30 days.</li>
+  <li><strong>Duels and challenges:</strong> your duel trophies, league and results; the challenges you send and receive (sender's player name, run, score, the chosen preset sentence, result) and the Snowcoins your ghost has won. When you challenge a friend, your name, the run and your score are written to their in-game challenge list; your own list of sent challenges also stores that friend's Game Center display name and in-game player ID. A challenge is valid for 7 days. If you create a challenge code, anyone who enters it in the game sees your name, the run and your score and can race your ghost; the code is valid for 30 days. The player name and result (score, whether they beat you) of each player who races your code are shown to you and stored in your record (last 5 results). If you race someone else's code, your name and result are shown to the code's owner in the same way.</li>
   <li><strong>Profile:</strong> your public profile (chosen avatar, player name, level, duel trophies and league, total runs, the runs where you hold the record, your favourite run, the equipment you wear) is shown to other players.</li>
-  <li><strong>Game Center ID</strong> (only if Game Center is on on your iPhone): the player ID Apple
-      issues for this game, used to link your progress to your Game Center account and bring it back
-      when you change phones. Your Game Center nickname is only offered to you as a name suggestion;
+  <li><strong>Game Center ID</strong> (only if Game Center is on on your iPhone): Apple's Game Center player ID
+      (the "team player ID" Apple issues for this developer's games), used to link your progress to your Game Center
+      account and bring it back when you change phones. The server also keeps a record that maps this ID to your
+      in-game player ID; your Game Center friends find your scores through this mapping and can challenge you.
+      This mapping is not shown to other players. Your Game Center nickname is only offered to you as a name suggestion;
       it is not put on the leaderboard unless you choose it.</li>
   <li><strong>Game Center friends list</strong> (only if you allow it; your iPhone asks separately):
-      to show your friends' scores on the "Friends" tab of the leaderboard screen, or to challenge a friend, your friends' Game Center player IDs are sent to the server. They are not stored; they are only used at that moment to look up the scores and the friends who play the game.</li>
+      to show your friends' scores on the "Friends" tab of the leaderboard screen, or to challenge a friend, your friends' Game Center player IDs are sent to the server. These IDs are not stored; they are only used at that moment to look up the scores and the friends who play the game. If you challenge a friend, only that friend's display name and in-game player ID are stored in your challenge list, as described above.</li>
   <li><strong>Technical data (Unity):</strong> to run the service and prevent abuse, Unity's servers process
       the IP address of the connection and your device / operating system type, and may derive an approximate
       location (country / city level) from the IP address. Unity's in-game service libraries may also send
       usage information about the services (e.g. sign-in attempts) and anonymous crash data to monitor service health.</li>
 </ul>
 <p><strong>Not collected:</strong> email, phone number, real name, date of birth, precise (GPS) location, contacts,
-photos, microphone, camera, advertising identifier (IDFA). The game never asks for these permissions.
+photos, microphone, camera, advertising identifier (IDFA). The game never asks for this information or these permissions.
+If you email us yourself (at the support address in Settings › Account, or by sending the pre-filled email that
+opens in your mail app when a report cannot reach the server), your email address and what you write reach us; the
+pre-filled email contains the reported player's name and ID and your player ID.
 The mountain and runs are drawn from bundled map data; your phone's location is not used.</p>
 
 <h2>2. How the data is used</h2>
-<p>This data is used only to make the game work: leaderboards, backing up your progress in the cloud
-and restoring it when you change phones, and checking scores against cheating. We do
+<p>This data is used only to make the game work: leaderboards, duels and challenges, backing up your progress in the cloud
+and (with Game Center) restoring it when you change phones, and checking scores against cheating. We do
 <strong>not</strong> use it for advertising, profiling, selling, or matching with other apps, and we use no analytics tools of our own (Unity's service libraries may use your player ID and service usage data to analyse and maintain their own services, see section 6). We do not
 track you across apps and websites.</p>
 
 <h2>3. What stays on your device</h2>
-<p>The following is stored only on your phone and never sent anywhere:</p>
+<p>The following is stored on your phone:</p>
 <ul>
-  <li>Settings: sound, language, steering, display options, and the players you have blocked</li>
-  <li>Scores waiting to be sent (while offline) and the game's own temporary files</li>
+  <li>Settings (sound, language, steering, display options) and the players you have blocked — these stay on the phone and are never sent anywhere</li>
+  <li>Your game progress save — the progress data in section 1 is also backed up to the cloud</li>
+  <li>Ghost files of your record runs — your record ghost is also sent to the server with your score (section 1)</li>
+  <li>Rival ghosts downloaded from the server (up to 30) and player profiles you look at while the game is open (up to 50, in memory only)</li>
+  <li>A Game Center link marker (which player ID your Game Center ID was last mapped to, and when) — stays on the phone</li>
+  <li>Scores and duel results waiting to be sent (while offline) — sent once you are connected — and the game's own temporary files</li>
 </ul>
+<p>If you play with a guest account (without Game Center), you lose your progress when you delete the game or change phones.</p>
 
 <h2>4. Deleting your data</h2>
 <p>In the game, go to <strong>Settings › Account › Delete my account</strong> to delete your account at any
 time (you are asked to confirm twice; an internet connection is needed). This deletes your player account
-at Unity, your cloud save, the scores linked to your account, your run recordings (ghosts), your duel and challenge records and your challenge codes, and resets the progress on your phone.
+at Unity, your cloud save, the scores linked to your account, your run recordings (ghosts), your duel and challenge records, your challenge codes, your Game Center mapping and your challenges in the lists of the friends you challenged, and resets the progress on your phone.
+Not deleted: the records of challenges other players sent you, kept in their lists, and your name and result written to another player's record when you raced their code (these stay until they expire; an expired record is removed the next time that player's list is updated); reports you made or that were made about you (section 7). Your daily report counter may also not be deleted.
 Deletion on the server may take a few days to complete. Deleting the app alone does not delete the data
-on the server. If you cannot open the game, write to the address below with your player ID (shown in
-Settings › Account) and we will delete it for you.</p>
+on the server. If you cannot open the game, write to the address below; include your player ID (shown in
+Settings › Account) if you noted it earlier, otherwise your player name. If we can find your account, we will delete it for you.</p>
 
 <h2>5. Internet connection</h2>
-<p>The game is fully playable offline. When online, it connects to Unity's servers at launch, at the end of
-a run and when the game goes to the background: sign-in, cloud save, sending scores and reading
-leaderboards. While offline, scores wait on the phone and are sent once you are connected.</p>
+<p>The runs can be played offline. Leaderboards, duels, challenges, challenge codes and player profiles need an
+internet connection; offline, instead of duels you can only practise against coach ghosts (no trophies or Snowcoin).
+When online, the game connects to Unity's servers at these moments: at launch (sign-in, cloud save, Game Center
+mapping — at most once a day), at the end of a run (sending the score and record ghost), when the game goes to the
+background (cloud save), when you open the leaderboard screen, a profile card or the duel menu, when a duel starts and
+ends (downloading rival ghosts), each time you return to the main menu (challenge inbox, at most once a minute), and when
+you send a challenge, create a code, change your name, report a player or delete your account.
+While offline, scores wait on the phone and are sent once you are connected.</p>
 
 <h2>6. Third parties</h2>
 <ul>
   <li><strong>Unity Gaming Services</strong> (Unity Technologies): player sign-in (Authentication), cloud
-      save (Cloud Save), leaderboards (Leaderboards) and score checks (Cloud Code). The data is processed on
-      Unity's servers on our behalf; the servers may be outside your country.
+      save (Cloud Save), leaderboards (Leaderboards) and server operations (Cloud Code: score checks, duels, challenges,
+      reports, account deletion). The data is processed on Unity's servers on our behalf; the servers may be
+      outside your country.
       Details: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity player privacy policy</a></li>
   <li><strong>Apple Game Center:</strong> if you use it, sign-in is handled by Apple and Apple's privacy
       policy applies.</li>
+  <li><strong>Google (Gmail):</strong> when a report reaches the server, its content (section 7) is forwarded to us
+      as an email notification through the developer's Google email account.</li>
 </ul>
 <p>No ad networks or tracking software are used, and we add no analytics services of our own. Unity may use the player ID and service usage data described in section 1 to analyse and improve its services.
 Because you get the app through the App Store or TestFlight, Apple's own privacy policy also applies;
@@ -109,14 +128,16 @@ download and crash statistics may be collected by Apple. Screenshots and comment
 <h2>7. Children</h2>
 <p>The game is for players of all ages. No account is created, no contact details are requested, and there
 is no free chat or messaging (challenges only carry one of the game's four preset sentences); other players only see your player name, your profile (avatar, level, trophies, records, equipment), your score and your run recording (ghost).
-Inappropriate player names are filtered. You can report or block any player from their profile card; reported names are reviewed by us. A report stores the reported player's ID and name, your player ID and the app version, and is kept only for reviewing it. See also the <a href="terms/">Terms of Use</a>.</p>
+Inappropriate player names are filtered. You can report or block any player from their profile card; reported names are reviewed by us. A report stores the reported player's ID and name, your player ID, the app version and the time: it is written to a list on the server that holds the last 200 reports (a new report replaces the oldest), appears in the server logs and is sent to us by email (section 6). It is used only for reviewing it. See also the <a href="terms/">Terms of Use</a>.</p>
 
 <h2>8. Purchases</h2>
 <p>There are currently no real-money in-app purchases or subscriptions. If they are added, payment will go
 through Apple and this page will be updated.</p>
 
 <h2>9. Retention</h2>
-<p>Data on the server is kept as long as your account exists. Weekly leaderboards reset every Monday;
+<p>Data on the server is kept as long as your account exists. These records are shorter-lived: challenges are valid
+for 7 days and challenge codes for 30 days (an expired record is removed the next time that list is updated); the
+report list holds the last 200 reports. Weekly leaderboards reset every Monday at 00:00 (Turkey time);
 previous weeks' results are not kept.</p>
 
 <h2>10. Your rights</h2>
@@ -125,7 +146,7 @@ change your player name and delete your account in Settings › Account; for any
 address below with your player ID.</p>
 
 <h2>11. Map data</h2>
-<p>Terrain: Copernicus EU-DEM (AWS Terrain Tiles). Runs, lifts, buildings:
+<p>Terrain: Copernicus EU-DEM (AWS Terrain Tiles). Run lines, buildings and roads:
 © OpenStreetMap contributors (ODbL). Forest cover: © ESA WorldCover 2021 (CC BY 4.0).
 This data contains no personal data. The map files derived from OpenStreetMap are openly available under ODbL 1.0
 <a href="../odbl/">here</a>.</p>

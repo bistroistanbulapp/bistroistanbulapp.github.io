@@ -25,21 +25,31 @@
 <body>
 
 <h1>Skier — Map data (ODbL)</h1>
-<p class="alt">28 October 2026</p>
+<p class="alt">Updated 24 November 2026</p>
 
 <p>The game Skier contains map data derived from OpenStreetMap. In line with the
 <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) 1.0</a>,
-these derived databases are made available here under the same licence:</p>
+these derived databases are made available here under the same licence. They are the same files that are
+inside the app:</p>
 <ul>
-  <li><a href="uludag_map.json"><code>uludag_map.json</code></a> — ski runs, lifts and peaks (local metre coordinates; brand and hotel names removed)</li>
-  <li><a href="uludag_world_extra.json"><code>uludag_world_extra.json</code></a> — building footprints with estimated floor counts, and roads (geometry only, no names)</li>
+  <li><a href="dag_harita.json"><code>dag_harita.json</code></a> — 2 ski run lines and 33 peak points (height and
+      position), in local metre coordinates, with the grid size of the game's terrain. It contains no lifts, and all
+      names are empty.</li>
+  <li><a href="dag_yapilar.json"><code>dag_yapilar.json</code></a> — 137 building footprints with estimated floor
+      counts and 92 road lines (geometry only, no names).</li>
 </ul>
 <p>Source: © OpenStreetMap contributors —
 <a href="https://www.openstreetmap.org/copyright">openstreetmap.org/copyright</a>.
-Data downloaded via the Overpass API and converted to the game's local coordinate format.</p>
+Data downloaded via the Overpass API and converted to the game's local coordinate format.
+Terrain height (Copernicus EU-DEM, AWS Terrain Tiles) and forest cover (© ESA WorldCover 2021, CC BY 4.0) do not
+come from OpenStreetMap and are not part of these files; their credits are in the game's Settings.</p>
 
-<p><strong>Türkçe:</strong> Skier oyunundaki pist, lift, zirve, bina ve yol verisi OpenStreetMap'ten türetilmiştir
-(© OpenStreetMap katkıda bulunanlar). Türetilmiş veri dosyaları yukarıda ODbL 1.0 ile herkese açıktır.</p>
+<p><strong>Türkçe:</strong> Skier oyunundaki pist çizgisi, zirve, bina ve yol verisi OpenStreetMap'ten
+türetilmiştir (© OpenStreetMap katkıda bulunanlar). Uygulamanın içindekiyle aynı olan türetilmiş veri dosyaları
+yukarıda ODbL 1.0 ile herkese açıktır: <code>dag_harita.json</code> (2 pist çizgisi ve 33 zirve noktası; lift yok,
+adlar boş) ve <code>dag_yapilar.json</code> (137 bina ve 92 yol, yalnız şekil, ad yok). Arazi yüksekliği (Copernicus
+EU-DEM) ve orman örtüsü (ESA WorldCover) OpenStreetMap'ten gelmez, bu dosyalarda yoktur; künyeleri oyunun
+Ayarlar ekranındadır.</p>
 
 <p>Contact / İletişim: info@bistroistanbulapp.com</p>
 
